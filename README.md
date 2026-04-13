@@ -1,6 +1,6 @@
 # Photos50
 
-Single-user JavaFX photo application for CS213-style assignment requirements.
+Photos50 is a desktop photo organizer built with JavaFX. It lets users create albums, add pictures, write captions, manage tags, search their library, and save everything between sessions.
 
 ## Requirements
 
