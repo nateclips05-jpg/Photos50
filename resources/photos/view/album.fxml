@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="photos.controller.AlbumController"
+            style="-fx-background-color: #f8fafc;">
+    <top>
+        <HBox spacing="12" alignment="CENTER_LEFT" style="-fx-background-color: #1d4ed8;">
+            <padding>
+                <Insets top="16" right="16" bottom="16" left="16"/>
+            </padding>
+            <Label fx:id="albumNameLabel" style="-fx-text-fill: white; -fx-font-size: 24px; -fx-font-weight: bold;"/>
+            <Button text="Back" onAction="#handleBack"/>
+            <Button text="Logout" onAction="#handleLogout"/>
+        </HBox>
+    </top>
+    <center>
+        <HBox spacing="16">
+            <padding>
+                <Insets top="16" right="16" bottom="16" left="16"/>
+            </padding>
+            <VBox spacing="10" prefWidth="480">
+                <ListView fx:id="photoListView" VBox.vgrow="ALWAYS"/>
+                <HBox spacing="10">
+                    <Button text="Add Photo" onAction="#handleAddPhoto"/>
+                    <Button text="Remove" onAction="#handleRemovePhoto"/>
+                    <Button text="Recaption" onAction="#handleRecaption"/>
+                </HBox>
+                <HBox spacing="10">
+                    <Button text="Copy" onAction="#handleCopyPhoto"/>
+                    <Button text="Move" onAction="#handleMovePhoto"/>
+                    <Button text="Previous" onAction="#handlePrevious"/>
+                    <Button text="Next" onAction="#handleNext"/>
+                </HBox>
+            </VBox>
+            <VBox spacing="10">
+                <ImageView fx:id="previewImageView" fitWidth="420" fitHeight="320" preserveRatio="true"/>
+                <Label fx:id="photoNameLabel" style="-fx-font-size: 18px; -fx-font-weight: bold;"/>
+                <Label text="Caption:" style="-fx-font-weight: bold;"/>
+                <Label fx:id="captionLabel" wrapText="true"/>
+                <Label text="Date Taken:" style="-fx-font-weight: bold;"/>
+                <Label fx:id="dateLabel"/>
+                <Label text="Tags:" style="-fx-font-weight: bold;"/>
+                <Label fx:id="tagsLabel" wrapText="true"/>
+                <Separator/>
+                <HBox spacing="8">
+                    <ComboBox fx:id="tagTypeComboBox" prefWidth="160"/>
+                    <TextField fx:id="tagValueField" promptText="Tag value"/>
+                </HBox>
+                <HBox spacing="10">
+                    <Button text="New Tag Type" onAction="#handleAddTagType"/>
+                    <Button text="Add Tag" onAction="#handleAddTag"/>
+                    <Button text="Delete Tag" onAction="#handleDeleteTag"/>
+                </HBox>
+            </VBox>
+        </HBox>
+    </center>
+</BorderPane>

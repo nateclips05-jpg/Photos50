@@ -1,0 +1,5 @@
+out/
+tmp/
+data/app-state.ser
+tools/openjfx-21.0.2_windows-x64_bin-sdk.zip
+tools/javafx-sdk-21.0.2/
