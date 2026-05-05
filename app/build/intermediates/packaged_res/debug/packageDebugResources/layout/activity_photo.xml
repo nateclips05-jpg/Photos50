@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/fullPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:adjustViewBounds="true"
+        android:background="#E4E7EA"
+        android:contentDescription="Selected photo"
+        android:scaleType="fitCenter" />
+
+    <TextView
+        android:id="@+id/photoPosition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:textColor="@color/muted"
+        android:textSize="14sp" />
+
+    <ListView
+        android:id="@+id/tagList"
+        android:layout_width="match_parent"
+        android:layout_height="116dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/card_bg"
+        android:choiceMode="singleChoice" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:columnCount="2">
+
+        <Button
+            android:id="@+id/previousButton"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_margin="4dp"
+            android:background="@drawable/button_secondary"
+            android:text="Previous"
+            android:textColor="@color/ink" />
+
+        <Button
+            android:id="@+id/nextButton"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_margin="4dp"
+            android:background="@drawable/button_secondary"
+            android:text="Next"
+            android:textColor="@color/ink" />
+
+        <Button
+            android:id="@+id/addTagButton"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_margin="4dp"
+            android:background="@drawable/button_primary"
+            android:text="Add Tag"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/deleteTagButton"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_margin="4dp"
+            android:background="@drawable/button_secondary"
+            android:text="Delete Tag"
+            android:textColor="@color/danger" />
+    </GridLayout>
+</LinearLayout>

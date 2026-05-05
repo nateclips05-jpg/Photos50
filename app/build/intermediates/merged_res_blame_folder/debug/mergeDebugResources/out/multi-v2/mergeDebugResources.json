@@ -1,0 +1,62 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.example.rutgersphotos.app-debug-4:/values_values.arsc.flat",
+            "map": [
+                {
+                    "source": "C:\\Users\\Kyan\\Desktop\\rutgers\\software methodology\\hw4\\RutgersPhotosAndroid\\app\\src\\main\\res\\values\\colors.xml",
+                    "from": {
+                        "startLines": "5,6,1,7,3,4,2",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "173,214,16,260,95,133,53",
+                        "endColumns": "40,45,36,40,37,39,41",
+                        "endOffsets": "209,255,48,296,128,168,90"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "55,96,142,179,220,258,298",
+                        "endColumns": "40,45,36,40,37,39,41",
+                        "endOffsets": "91,137,174,215,253,293,335"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Kyan\\Desktop\\rutgers\\software methodology\\hw4\\RutgersPhotosAndroid\\app\\src\\main\\res\\values\\styles.xml",
+                    "from": {
+                        "startLines": "1",
+                        "startColumns": "4",
+                        "startOffsets": "16",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "285"
+                    },
+                    "to": {
+                        "startLines": "10",
+                        "startColumns": "4",
+                        "startOffsets": "384",
+                        "endLines": "14",
+                        "endColumns": "12",
+                        "endOffsets": "653"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Kyan\\Desktop\\rutgers\\software methodology\\hw4\\RutgersPhotosAndroid\\app\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "1",
+                        "startColumns": "4",
+                        "startOffsets": "16",
+                        "endColumns": "43",
+                        "endOffsets": "55"
+                    },
+                    "to": {
+                        "startLines": "9",
+                        "startColumns": "4",
+                        "startOffsets": "340",
+                        "endColumns": "43",
+                        "endOffsets": "379"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="accent">#176D6A</color>
+    <color name="accent_dark">#0E4D4B</color>
+    <color name="bg">#F7F7F4</color>
+    <color name="danger">#A23A3A</color>
+    <color name="ink">#202124</color>
+    <color name="muted">#646A73</color>
+    <color name="surface">#FFFFFF</color>
+    <string name="app_name">Photos</string>
+    <style name="AppTheme" parent="android:style/Theme.Material.Light.NoActionBar">
+        <item name="android:fontFamily">sans</item>
+        <item name="android:windowBackground">@color/bg</item>
+        <item name="android:colorAccent">@color/accent</item>
+    </style>
+</resources>

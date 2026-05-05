@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Albums"
+        android:textColor="@color/ink"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/albumList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="12dp"
+        android:layout_weight="1"
+        android:background="@drawable/card_bg"
+        android:choiceMode="singleChoice"
+        android:divider="#D8DDE2"
+        android:dividerHeight="1dp" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:columnCount="2">
+
+        <Button
+            android:id="@+id/openAlbumButton"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_margin="4dp"
+            android:background="@drawable/button_primary"
+            android:text="Open"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/searchButton"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_margin="4dp"
+            android:background="@drawable/button_secondary"
+            android:text="Search"
+            android:textColor="@color/ink" />
+
+        <Button
+            android:id="@+id/createAlbumButton"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_margin="4dp"
+            android:background="@drawable/button_secondary"
+            android:text="Create"
+            android:textColor="@color/ink" />
+
+        <Button
+            android:id="@+id/renameAlbumButton"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_margin="4dp"
+            android:background="@drawable/button_secondary"
+            android:text="Rename"
+            android:textColor="@color/ink" />
+
+        <Button
+            android:id="@+id/deleteAlbumButton"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_margin="4dp"
+            android:background="@drawable/button_secondary"
+            android:text="Delete"
+            android:textColor="@color/danger" />
+    </GridLayout>
+</LinearLayout>

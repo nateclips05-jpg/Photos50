@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:textColor="@color/ink"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/typeOneSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp" />
+
+    <AutoCompleteTextView
+        android:id="@+id/valueOneInput"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="First tag value"
+        android:inputType="text"
+        android:singleLine="true" />
+
+    <Spinner
+        android:id="@+id/operatorSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+
+    <Spinner
+        android:id="@+id/typeTwoSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+
+    <AutoCompleteTextView
+        android:id="@+id/valueTwoInput"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Second tag value"
+        android:inputType="text"
+        android:singleLine="true" />
+
+    <Button
+        android:id="@+id/runSearchButton"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/button_primary"
+        android:text="Search"
+        android:textColor="#FFFFFF" />
+
+    <GridView
+        android:id="@+id/searchResultsGrid"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="12dp"
+        android:layout_weight="1"
+        android:background="@drawable/card_bg"
+        android:horizontalSpacing="8dp"
+        android:numColumns="3"
+        android:padding="8dp"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="8dp" />
+</LinearLayout>

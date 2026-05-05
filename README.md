@@ -1,30 +1,45 @@
-# Photos50
+# Rutgers Photos Android
 
-Photos50 is a desktop photo organizer built with JavaFX. It lets users create albums, add pictures, write captions, manage tags, search their library, and save everything between sessions.
+Android port of the JavaFX Photos assignment. The app is written in Java with Android XML layouts and stores library data as JSON in the app's internal files directory.
 
-## Requirements
+## Build
 
-- JDK 21 or newer with `javac`
-- JavaFX SDK 21.0.2 in `tools/javafx-sdk-21.0.2`
+Open this folder in Android Studio:
 
-## Project layout
+```text
+RutgersPhotosAndroid
+```
 
-- `src/` Java source
-- `resources/` FXML views
-- `data/` stock photos and serialized application state
-- `docs/` generated Javadoc
-- `tools/` local JavaFX SDK
+Use a 1080 x 2400, 420 dpi emulator such as Pixel 6 or Medium Phone with API 36 or API 37. The Gradle files use Kotlin DSL, as requested by the assignment.
 
-## Scripts
+## Features
 
-- `.\compile.ps1` compiles source and copies FXML resources into `out/`
-- `.\run.ps1` launches the application
-- `.\verify.ps1` runs compile plus service/FXML smoke tests
-- `.\generate-javadoc.ps1` generates Javadoc into `docs/`
+- Home screen loads saved JSON data and lists albums in plain text.
+- Albums can be created, opened, renamed, and deleted.
+- Open albums display photo thumbnails.
+- Photos can be added through Android's image picker, removed, displayed, and moved to another album.
+- The photo display screen shows tags and provides Previous/Next manual slideshow controls.
+- Tags are limited to `person` and `location`; tags can be added and deleted.
+- Search runs across all albums and supports single tag search, AND, OR, case-insensitive matching, and prefix autocomplete.
 
-## Default users
+## JSON storage
 
-- `admin`
-- `stock`
+The app writes `photo-library.json` inside Android internal app storage. Each album stores its name and an array of photo records. Each photo stores its Android URI and an array of tag objects:
 
-`stock` starts with a `stock` album backed by images in `data/stock/`.
+```json
+{
+  "albums": [
+    {
+      "name": "Vacation",
+      "photos": [
+        {
+          "uri": "content://...",
+          "tags": [
+            {"type": "location", "value": "new york"}
+          ]
+        }
+      ]
+    }
+  ]
+}
+```
